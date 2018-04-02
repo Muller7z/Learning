@@ -32,7 +32,7 @@ def save(As,As_,a,a_):
         else:
 
             print("╔════════╗上层距离a'=%smm" % a_)
-            print("║·    ·║ ·%smm x %s根" % (d, n_))
+            print("║· · ·║ ·%smm x %s根" % (d, n_))
             print("║        ║ 受压区实际配筋面积=%smm²" % AREAs_)
             print("║        ║")
             print("║        ║")

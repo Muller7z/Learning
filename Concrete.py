@@ -46,7 +46,6 @@ def Condition_ONE(M,Gd,P_min,b,h,Fc,Fy,Fy_,As_,Alpha_s_d,Eps_b):
         print("按SL191-2008取a1=0.85")
         a1 = float(input("请输入α1:"))
         As = (Fc*b*a1*Eps_b*h0+Fy_*As_)/(Fy)
-        print("As=%s"%As)
         AREAs = As
         AREAs_ = As_
         # 请注意
