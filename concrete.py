@@ -19,8 +19,9 @@ def Condition_ONE(M,Gd,P_min,b,h,Fc,Fy,Fy_,As_,Alpha_s_d,Eps_b):
         Eps = 1 - math.pow((1 - 2 * Alpha_s), 0.5)
         print("ε = %s" % format_output(Eps))
         As = (Fc*b*Eps*h0)/Fy
-        if As/(b*h0) >= P_min:
-            print("配筋率As/bh0 = %s >= P_min = %s" %(format_output(As / (b * h0)),Pmin))
+        print("As=%smm²"%format_output(As*1000*1000))
+        if As/(b*h0) >= P_min*0.01:
+            print("配筋率As/bh0 = %s >= P_min = %s" %(format_output((As / (b * h0))*100),Pmin))
             print("满足最小配筋率要求")
             AREAs = As
             AREAs_ = As_
